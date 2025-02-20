@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pair Perfect - Home</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="shortcut icon" type="image/jpg" href="Images/PairPefect.jpg"/>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="3D.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-left">
+           <img src="Images/PairPefect.jpg" alt="Pair Perfect Logo" class="nav-logo">
+           <div class="logo" style="color: white;font-family:cursive">Pair Perfect</div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Main-Game\MainGame.html">Play Game</a></li>
+            <li><a href="https://www.linkedin.com/in/mohammed-r-umar-farooq/">About</a></li>
+        </ul>
+    </nav>
+    <!-- Home Page Content -->
+<div class="home-wrapper">
+    <div class="home-container">
+        <h1>Welcome to Pair Perfect 🃜🃚🃖🃁🂭🂺</h1>
+        <br>
+        <p style="text-align: left;font-family: cursive;font-size: 16px;">Pair Perfect is an exciting and addictive memory-matching game where players flip over cards to find and match identical pairs.
+            <br>
+            <br>
+            Think you have what it takes to master Pair Perfect? 
+            <br>
+            Test your memory now and become the ultimate matching champion! 🏆🎮
+            <br></p>
+            <button onclick="startGame()" 
+    style="padding: 12px 20px; font-size: 16px; background-color: #28a745; color: white; border: 2px solid #28a745; cursor: pointer; border-radius: 5px; transition: 0.3s;" 
+    onmouseover="this.style.backgroundColor='black'; this.style.borderColor='#28a745';" 
+    onmouseout="this.style.backgroundColor='#28a745'; this.style.borderColor='#28a745';">
+    Start Game
+          </button>
+    </div>
+    <!-- Image beside home-container -->
+    <div class="img-wrapper"> 
+        <a href="https://poki.com/en/g/merge-mosaics" target="_blank">
+            <img src="Images/merge.png" alt="Merge Mosaics" class="home-image">
+        </a>
+        <a href="https://poki.com/en/g/woody-sort" target="_blank">
+            <img src="Images/woody-sort.png" alt="Woody Sort" class="home-image">
+        </a>
+        <a href="https://poki.com/en/g/merge-round-racers" target="_blank">
+            <img src="Images/round-racers.jpg" alt="Merge Round Racers" class="home-image">
+        </a>
+        <a href="https://poki.com/en/g/genie-quest" target="_blank">
+            <img src="Images/genie-quest.jpg" alt="Genie Quest" class="home-image">
+        </a>
+    </div>    
+</div>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 By mr-umardev. All rights reserved.
+    </footer>
+
+    <script>
+        function startGame() {
+            window.location.href = "Main-Game/MainGame.html"; // Redirect to the game page
+        }
+    </script>
+
+</body>
+</html>
